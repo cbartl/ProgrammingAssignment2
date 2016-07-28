@@ -44,7 +44,7 @@ cacheSolve <- function( x, ... ) {
     }
     message( "not in cache, calculating inversion" )
     data <- x$get()
-    inversedData <- solve( data )#, ... )
+    inversedData <- solve( data , ... )
     x$setInverse( inversedData )
     inversedData
 }
